@@ -3,6 +3,7 @@
     width: 60px;
   }
   @media (min-width: $desktop-width) {
+    width: auto;
     max-width: 160px;
   }
 }

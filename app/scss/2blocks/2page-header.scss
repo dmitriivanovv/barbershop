@@ -21,10 +21,13 @@
     order: 2;
     height: 400px;
     background-color: #000;
-    background-image: url(../../images/dist/back-tablet.jpg);
+    background-image: url(../../images/dist/back-desktop.png);
     background-repeat: no-repeat;
     background-position: center -9px;
-    background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/dist/back-desktop2x.png");
+      background-size: 1338px auto;
+    }
   }
   @media (min-width: $desktop-width) {
     height: 648px;
@@ -36,7 +39,15 @@
   width: 226px;
   height: 30px;
 
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 100px;
+    margin-top: 39px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 370px;
+    height: 153px;
     margin-top: 57px;
   }
 }
