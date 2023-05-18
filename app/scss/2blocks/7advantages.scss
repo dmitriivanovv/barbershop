@@ -1,0 +1,65 @@
+.advantages {
+  position: relative;
+  background-color: $darkgrey;
+  color: #fff;
+  margin: 0;
+  padding: 40px 55px 46px 55px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-image: url(../../images/dist/angle-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.advantages__list {
+  display: flex;
+}
+.advantages__item {
+  display: none;
+
+  padding-bottom: 30px;
+  text-align: center;
+}
+.advantages__item--fast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__title {
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 31px 0 12px;
+}
+.advantages__toggles {
+  text-align: center;
+}
+.slider__toggle {
+  margin-right: 23px;
+  border: none;
+  background-color: transparent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: " ";
+    transform: rotate(45deg);
+    display: block;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #FFFFFF
+    }
+}
+.slider__toggle--current {
+  &::before {
+    background-color: #fff;
+  }
+}

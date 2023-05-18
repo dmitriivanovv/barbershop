@@ -14,6 +14,7 @@
   @media (min-width: $desktop-width) {
     $stats-shift: -167px;
 
+    padding: 0;
     top: $stats-shift;
     margin: auto;
     margin-bottom: $stats-shift;
