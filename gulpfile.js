@@ -103,9 +103,13 @@ function style () {
 
 
 function watching() {
-    watch(['app/scss/style.scss'], styles);
+    // watch(['app/scss/style.scss'], styles);
+    watch(['app/scss/*.scss'], styles);
+    watch(['app/scss/**/*.scss'], styles);
     watch(['app/images/src'], images);
-    watch(['app/scss/style.scss'], style);
+    // watch(['app/scss/style.scss'], style);
+    watch(['app/scss/*.scss'], style);
+    watch(['app/scss/**/*.scss'], style);
     watch(['app/js/main.js'], scripts);
     watch(['app/components/*','app/pages/*'], pages);
     watch(['app/*.html']).on('change', browserSync.reload);
@@ -147,7 +151,7 @@ exports.pages =pages;
 exports.scripts = scripts;
 exports.watching = watching;
 exports.browsersync = browsersync;
-exports.sosourcemap =sourcemap;
+exports.sourcemap =sourcemap;
 
 exports.build = series(cleanDist, building);
 exports.default = parallel(style, styles, images, scripts, pages, browsersync, watching);

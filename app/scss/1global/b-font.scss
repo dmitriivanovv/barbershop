@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@font-face {
+  font-family: "PTSansNarro";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    url('fonts/ptsansnarrowbold.woff2') format('woff2'),
+    url('fonts/ptsansnarrowbold.woff') format('woff');
+}
+@font-face {
+  font-family: "PTSansNarro";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    url('fonts/ptsansnarrow.woff2') format('woff2'),
+    url('fonts/ptsansnarrow.woff') format('woff');
+}

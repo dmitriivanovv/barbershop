@@ -1,0 +1,185 @@
+.works {
+  display: grid;
+  row-gap: 20px;
+  @media ( min-width: $tablet-width) {
+    row-gap: 41px;
+  }
+  @media ( min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 38px;
+    row-gap: 39px;
+  }
+}
+.works--wrapper {
+  padding-bottom: 68px;
+  @media ( min-width: $tablet-width) {
+    padding-bottom: 103px;
+  }
+  @media ( min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
+}
+.works-item {
+  border: 1px solid #E5DDD5;
+  @media ( min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+  @media ( min-width: $desktop-width) {
+    grid-template-columns: auto;
+    grid-template-rows: max-content 1fr;
+  }
+}
+.works-item--work-of-month {
+  @media ( min-width: $desktop-width) {
+    grid-column: 1 /-1;
+    grid-template-columns: max-content 1fr;
+    .work-item__review {
+      padding: 134px 0 36px 42px;
+    }
+    .works-item__text {
+      margin-right: 140px;
+    }
+  }
+}
+.works-item--work-of-month {
+  .works-item-image--wrapper {
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "работа месяца";
+    width: 176px;
+    height: 50px;
+    color: #fff;
+    left: 0;
+    bottom: 29px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    }
+    @media ( min-width: $tablet-width) {
+      &::before {
+        top: 35px;
+      }
+    }
+    @media ( min-width: $desktop-width) {
+      &::before {
+        left: auto;
+        right: -478px;
+      }
+    }
+  }
+}
+.works-item--work-of-month {
+  .works-item-image--wrapper {
+
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 176px;
+    height: 50px;
+    left: 0;
+    bottom: 29px;
+    background-image: url(../../images/dist/label-mobile.svg);
+    }
+    @media ( min-width: $tablet-width) {
+      &::after {
+        top: 35px;
+      }
+    }
+    @media ( min-width: $desktop-width) {
+      &::after {
+        left: auto;
+        right: -478px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.works-item-image--wrapper {
+  width: 100%;
+}
+.works-item-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: -7px;
+}
+.work-item__review {
+  padding: 24px 30px 23px 26px ;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  row-gap: 26px;
+  @media ( min-width: $tablet-width) {
+    padding: 50px 60px 45px 50px;
+    row-gap: 38px;
+  }
+  @media ( min-width: $desktop-width) {
+    padding: 34px 32px 40px 36px;
+  }
+}
+.works-item__title {
+  font-size: 24px;
+  line-height: 27px;
+}
+.works-item__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.works-item__parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 34px;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.works-item__parameter-item {
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.works-item__parameter-item--haircut {
+  padding-left: 36px;
+  &::after {
+    width: 21px;
+    height: 20px;
+    left: 0;
+    top: 3px;
+    background-image: url(../../images/dist/scissors-icon.svg);
+  }
+}
+.works-item__parameter-item--shaving {
+  padding-left: 43px;
+  &::after {
+    width: 23px;
+    height: 31px;
+    left: 0;
+    top: -2px;
+    background-image: url(../../images/dist/beard-icon.svg);
+  }
+}
+.works-item__parameter-item--moustach {
+  padding-left: 45px;
+  &::after {
+    width: 45px;
+    height: 12px;
+    left: -11px;
+    top: 8px;
+    background-image: url(../../images/dist/mustache-icon.svg);
+  }
+}
