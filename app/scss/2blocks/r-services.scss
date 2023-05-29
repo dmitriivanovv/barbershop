@@ -1,0 +1,112 @@
+.services {
+  border: none;
+}
+.services__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media ( min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 39px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    margin-bottom: 61px;
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: #E5DDD5;
+    }
+    &::before {
+      margin-right: 28px;
+    }
+    &::after {
+      margin-left: 28px;
+    }
+  }
+  @media ( min-width: $desktop-width) {
+    &::before {
+      margin-right: 43px;
+    }
+    &::after {
+      margin-left: 43px;
+    }
+    margin-bottom: 70px;
+  }
+}
+.services__list {
+  margin-bottom: 53px;
+  display: grid;
+  row-gap: 32px;
+
+  @media ( min-width: $tablet-width) {
+    margin-bottom: 61px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 52px;
+  }
+  @media ( min-width: $desktop-width) {
+    margin-bottom: 82px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 59px;
+  }
+}
+.services__item {
+  display: flex;
+  position: relative;
+}
+.services-checkbox {
+  cursor: pointer;
+  &:focus {
+    +.services__label::before {
+      outline: 4px solid rgba(0, 125, 250, 0.6)
+    }
+  }
+  &:hover {
+    +.services__label::before {
+      border: 1px solid #D5C9BD;
+    }
+  }
+  &:active {
+    +.services__label::before {
+      background-color: #D5C9BD;
+    }
+  }
+  &:checked {
+    +.services__label::before {
+      background-image: url(../../images/dist/checkbox-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+.services__label {
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 61px;
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -5px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #E5DDD5;
+    @media ( min-width: $tablet-width) {
+      top: -2px;
+    }
+  }
+  @media ( min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 31px
+  }
+}

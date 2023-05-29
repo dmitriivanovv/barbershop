@@ -13,13 +13,31 @@
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
               <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+                  <a class="social__link social__link--vkontakte" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px )" srcset="../images/dist/vk-desktop-icon.svg">
+                      <img class="social-icon" src="../images/dist/vk-icon.svg">
+                    </picture>
+                    <span class="visually-hidden">Мы в Вконтакте</span>
+                  </a>
               </li>
               <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                  <a class="social__link social__link--facebook" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px )" srcset="../images/dist/fb-desktop-icon.svg">
+                      <img class="social-icon" src="../images/dist/fb-icon.svg">
+                    </picture>
+                    <span class="visually-hidden">Мы в Фейсбуке</span>
+                  </a>
               </li>
               <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                  <a class="social__link social__link--instagram" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px )" srcset="../images/dist/instagram-desktop-icon.svg">
+                      <img class="social-icon" src="../images/dist/instagram-icon.svg">
+                    </picture>
+                    <span class="visually-hidden">Мы в Инстаграме</span>
+                  </a>
               </li>
           </ul>
       </div>
@@ -30,6 +48,34 @@
   </div>
 
 </footer>
+
+<section class="modal modal-login">
+  <h2 class="modal__title">Личный кабинет</h2>
+  <p class="modal__description">Введите свой логин и пароль, чтобы войти</p>
+  <form class="modal__login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="lohin-form__login">
+          <label class="visually-hidden" for="login-login">Логин</label>
+          <input class="login-form__input login-form__input--user login__icon--user" type="email" name="login" id="login-login" placeholder="email@example.com" required>
+      </p>
+      <p class="lohin-form__password">
+          <label class="visually-hidden" for="login-password">пароль</label>
+          <input class="login-form__input login-form__input--password login__icon--password" type="password" name="password" id="login-password" placeholder="••••••••" minlength="8" required>
+      </p>
+      <p class="login-help">
+        <input type="checkbox" name="remember" id="remember" class="login-help__checkbox visually-hidden">
+        <label class="login-help__label" for="remember">Запомните меня</label>
+        <a class="login-help__restore" href="#">Я забыл пароль!</a>
+      </p>
+      <div class="login-form__buttons--wrapper">
+        <button class="modal-button login-button" type="submit">
+          <span class="login-button--text">Войти<span class="login-button--text-tablet"> в личный кабинет</span> </span>
+        </button>
+        <button class="modal-button modal-close" type="button">
+          <span class="modal-close--text">Закрыть</span>
+        </button>
+      </div>
+  </form>
+</section>
 
 <script src="js/main.min.js"></script>
 

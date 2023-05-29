@@ -83,7 +83,7 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 function styles () {
-    return src('app/scss/style.scss')
+    return src('app/scss/**/*.scss')
         .pipe(autoprefixer({overrideBrowserslist: ['last 10 version']}))
         .pipe(concat('style.min.css'))
         .pipe(scss({outputStyle: 'compressed' }))
@@ -91,7 +91,7 @@ function styles () {
         .pipe(browserSync.stream())
 }
 function style () {
-    return src('app/scss/style.scss')
+    return src('app/scss/**/*.scss')
         .pipe(autoprefixer({overrideBrowserslist: ['last 10 version']}))
         .pipe(sourcemap.init())
         .pipe(concat('style.css'))

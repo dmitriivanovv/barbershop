@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\style.css">
+  <title>Барбершоп "Бородинский"</title>
+</head>
+<body class="page__body form-page__body">
+  <header class="page-header">
+    <a class="page-header__logo header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/dist/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="images/dist/logotype-tablet.svg">
+        <img src="images/dist/logotype-mobile.svg" width="226" height="30" alt="Барбершоп 'Бородинский'">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item ">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Наши работы
+            </a>
+          </li>
+          <li class="site-list__item">
+              <a href="form.html">
+              Записаться
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Контакты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Прайс-лист
+            </a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login js-login" href="login.html">
+              <svg class="user-list__login-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white"/>
+                <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-main">
+    <div class="form--wrapper works--wrapper">
+      <header class="form-header">
+        <h1 class="header-title">Наши работы</h1>
+        <a class="header-link button" href="index.html">На главную</a>
+      </header>
+
+      <section class="works">
+        <article class="works-item works-item--lead works-item--work-of-month">
+          <p class="works-item-image--wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../images/dist/photo-1-desktop.jpg 1x, ../images/dist/photo-1-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../images/dist/photo-1-tablet.jpg 1x, ../images/dist/photo-1-tablet2x.jpg 2x">
+              <img class="works-item-image" src="../images/dist/photo-1-mobile.jpg" srcset="../images/dist/photo-1-mobile2x.jpg 2x" alt="фото Лжепётра Мчиславского">
+            </picture>
+          </p>
+          <div class="work-item__review">
+            <h2 class="works-item__title">
+              Лжепётр Мчиславский
+            </h2>
+            <blockquote class="works-item__text">
+              Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+            </blockquote>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+              <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритьё</li>
+              <li class="works-item__parameter-item works-item__parameter-item--moustach">Усы</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="works-item">
+          <p class="works-item-image--wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../images/dist/photo-2-desktop.jpg 1x, ../images/dist/photo-2-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../images/dist/photo-2-tablet.jpg 1x, ../images/dist/photo-2-tablet2x.jpg 2x">
+              <img class="works-item-image" src="../images/dist/photo-2-mobile.jpg" srcset="../images/dist/photo-2-mobile2x.jpg 2x" alt="фото Саши Мальцева">
+            </picture>
+          </p>
+          <div class="work-item__review">
+            <h2 class="works-item__title">
+              Саша Мальцев
+            </h2>
+            <blockquote class="works-item__text">
+              Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+            </blockquote>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="works-item">
+          <p class="works-item-image--wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../images/dist/photo-3-desktop.jpg 1x, ../images/dist/photo-3-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../images/dist/photo-3-tablet.jpg 1x, ../images/dist/photo-3-tablet2x.jpg 2x">
+              <img class="works-item-image" src="../images/dist/photo-3-mobile.jpg" srcset="../images/dist/photo-3-mobile2x.jpg 2x" alt="фото Владимира Иваныча">
+            </picture>
+          </p>
+          <div class="work-item__review">
+            <h2 class="works-item__title">
+              Владимир Иваныч
+            </h2>
+            <blockquote class="works-item__text">
+              Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+            </blockquote>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item works-item__parameter-item--shaving">Борода</li>
+              <li class="works-item__parameter-item works-item__parameter-item--moustach">Усы</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="works-item">
+          <p class="works-item-image--wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../images/dist/photo-4-desktop.jpg 1x, ../images/dist/photo-4-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../images/dist/photo-4-tablet.jpg 1x, ../images/dist/photo-4-tablet2x.jpg 2x">
+              <img class="works-item-image" src="../images/dist/photo-4-mobile.jpg" srcset="../images/dist/photo-4-mobile2x.jpg 2x" alt="фото Винстона Синего">
+            </picture>
+          </p>
+          <div class="work-item__review">
+            <h2 class="works-item__title">
+              Винстон Синий
+            </h2>
+            <blockquote class="works-item__text">
+              Как только зарастаю и волосы начинают мешать видеть — бегом в Бородинский!
+            </blockquote>
+            <ul class="works-item__parameter-list">
+              <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+            </ul>
+          </div>
+        </article>
+
+      </section>
+      </div>
+      <div class= "price--wrapper">
+      <section class="price">
+        <h2 class="ptice__title">Прейскурант</h2>
+        <article class="price__table">
+          <table class="price__table--wrapper">
+            <tr class="price__table-row">
+              <td class="price__table-cell price__table-cell--number">
+                <span class="price__table-cell--number-inner">1</span>
+              </td>
+              <td class="price__table-cell price__table-cell--title">
+                Классическая стрижка
+              </td>
+              <td class="price__table-cell price__table-cell--option">
+                <span class="price__table-cell--brackets">(</span>
+                с мытьём головы
+                <span class="price__table-cell--brackets">)</span>
+              </td>
+              <td class="price__table-cell price__table-cell--price">
+                1 500 руб.
+              </td>
+            </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell price__table-cell--number">
+                <span class="price__table-cell--number-inner">2</span>
+              </td>
+              <td class="price__table-cell price__table-cell--title">
+                Современный вариант
+              </td>
+              <td class="price__table-cell price__table-cell--option">
+                <span class="price__table-cell--brackets">(</span>
+                с мытьём головы
+                <span class="price__table-cell--brackets">)</span>
+              </td>
+              <td class="price__table-cell price__table-cell--price">
+                1 500 руб.
+              </td>
+            </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell price__table-cell--number">
+                <span class="price__table-cell--number-inner">3</span>
+              </td>
+              <td class="price__table-cell price__table-cell--title">
+                Индивидуальный подход
+              </td>
+              <td class="price__table-cell price__table-cell--option">
+                <span class="price__table-cell--brackets">(</span>
+                с мытьём головы
+                <span class="price__table-cell--brackets">)</span>
+              </td>
+              <td class="price__table-cell price__table-cell--price">
+                2 000 руб.
+              </td>
+            </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell price__table-cell--number">
+                <span class="price__table-cell--number-inner">4</span>
+              </td>
+              <td class="price__table-cell price__table-cell--title">
+                Бритьё бороды
+              </td>
+              <td class="price__table-cell price__table-cell--option">
+                <span class="price__table-cell--brackets">(</span>
+                без мытья
+                <span class="price__table-cell--brackets">)</span>
+              </td>
+              <td class="price__table-cell price__table-cell--price">
+                500 руб.
+              </td>
+            </tr>
+            <tr class="price__table-row">
+              <td class="price__table-cell price__table-cell--number">
+                <span class="price__table-cell--number-inner">4</span>
+              </td>
+              <td class="price__table-cell price__table-cell--title">
+                Бритьё головы
+              </td>
+              <td class="price__table-cell price__table-cell--option">
+                <span class="price__table-cell--brackets">(</span>
+                с мытьём головы
+                <span class="price__table-cell--brackets">)</span>
+              </td>
+              <td class="price__table-cell price__table-cell--price">
+                1 000 руб.
+              </td>
+            </tr>
+          </table>
+        </article>
+        <article class="price__discount-time">
+          <picture>
+            <source media="(min-width: 1200px )" srcset="../images/dist/clock-illustration-desktop.svg">
+            <source media="(min-width: 768px )" srcset="../images/dist/clock-illustration-tablet.svg">
+            <img class="discount-time__icon" src="../images/dist/clock-illustration-moble.svg">
+          </picture>
+          <p class="discount-time__discription">C 10:00 до 14:00 скидка 20%</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+    <!--=include footer.html-->
